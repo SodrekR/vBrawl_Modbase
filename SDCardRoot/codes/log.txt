@@ -1,0 +1,260 @@
+Source/P+Ex/Hooktype.asm
+	VBI -> AXNextFrame During Boot v1.0 [Sammi-Husky]
+BA and BLA are usable instructions v1.3 [Eon, taukhan]
+Memory Extention for FighterXResource2 [Dantarion]
+Memory Extension for CSS/SSS MenuResource (+0.79MB) [DukeItOut]
+Reset multipac stage lock status between Classic & All-Star matches [wiiztec]
+Explodey Items Use Normal Item Limit [Kapedani]
+Party Balls Use Normal Item Limit [Kapedani]
+Bunny Hoods Use Normal Item Limit [Kapedani]
+1 Player Matches in Time Mode only [InternetExplorer]
+1 Team Matches [spunit262]
+Allow 2x Speed Setting in Training [Magus]
+Unrestricted Pause Camera
+Unrestricted Replay Camera
+[Legacy TE] CPUs can attack each other in Training Mode [Fracture]
+[Legacy TE] Set the number of CPUs to 0 in Training Mode [Sarrg]
+[Legacy TE] Target Smash levels fix [DukeItOut]
+[Legacy TE] Always use PACs instead of PCS files [DukeItOut]
+[Legacy TE] Display Stack Trace, Instruction, and Address Upon Crashing [UnclePunch, Fracture] (internal crash fix by Eon)
+/Source/P+Ex/EffectsEX.asm
+	Effect.pac Roster Expansion System (RSBE.Ver) V3 (Costume-Specific Etc File Support) [JOJI, DukeItOut, QuickLava]
+Sword Trail Hitlag fix [MarioDox]
+[Project+] Item Frequency None if all items turned off and Items spoofed off if item frequency None  [Eon]
+Subspace uses same Internal Constants as Versus [Eon]
+[Project+] Pitfall effect can have no-bury with trip rate 2.0 [Eon]
+Source/ProjectM/CloneEngine.asm
+	Clone Engine Data Saving Fix [ds22]
+	Clone Engine Corps Stock Fix + BrawlEX Corps Fix v1 + Exception Macro [ds22, Desi]
+	Mewtwo Fixes [Dantarion, ds22]
+	Lucario Clone Aura Sphere GFX Fix [Dantarion, ds22, DesiacX]
+	Kirby Lucario Clone Aura Sphere GFX Fix [ds22, DesiacX, Eon]
+	Lucario Clone Aura Sphere Bone ID Fix [Dantarion, ds22, PyotrLuzhin, Yohan1044, KingJigglypuff, Desi]
+	Knuckles Fixes
+	Lyn Fixes [ds22]
+	Samus Clone Charge Shot GFX Fix [Eon, KingJigglypuff]
+	Kirby Samus Clone Charge Shot GFX Fix [ds22, DesiacX, Eon, KingJigglypuff]
+	Jigglypuff Clone Rollout Bone Fix [codes, DesiacX]
+	Jigglypuff Clone Rollout Max Charge GFX Fix [Codes, DesiacX]
+	Jigglypuff Clone Rollout SFX Fix [codes, DesiacX]
+	Dedede Clones Fix [MarioDox]
+	Bowser Clone Fire Breath Bone Fix [KingJigglypuff]
+	Clone Engine Clear Final Smash Fix [DukeItOut]
+	source/P+Ex/KirbyHatEx.asm
+		[Project+] Kirby CE Hat Prop Fix [ds22]
+		Weapon Data Fix Automatic [ds22, Desi]
+		Kirby Hat Float Fix [dantarion]
+		KirbyID Conversion Fix for EX [Desi]
+		Kirby Hats EX Shadow Fix [Desi]
+		EX Hat DESTROY Fix [Desi]
+		Temporary Hatless Clone Kirby Inhale Fix [DukeItOut]
+		KirbyHat.kbx Loader [Desi]
+	Classic and All-Star Ending Choice Engine v1.1d [DukeItOut]
+	Clone Classic & All-Star Result Data V1.21 [ds22, Dantarion, DukeItOut]
+	BrawlEx Classic/All-Star Cosmetic ID Fix [KingJigglypuff]
+Source/ProjectM/CustomAI.asm
+	CPU DI fix [Bero]
+	CPUs Don't Ignore Other CPUs to Target Humans [Magus]
+	Nana automatic throw enabler(auto throw routine 6100) [Bero, fix by Eon]
+	Custom AI Function Loader [Magus]
+	Custom AI Functions [Magus]
+	Custom AI Requirement Loader[Bero]
+	Custom AI Requirement Table[Bero]
+	req Equal  0x1020 lhs rhs[Bero]
+	req IsStage  0x1021 ID[Bero]
+	Custom AI Command Loader[Bero]
+	Custom AI Command Table[Bero]
+	cmd RetrieveATKD  0x33 variable subaction opponent[Bero]
+	CPU falls from respawn plane when Turbo[Bero]
+	Ledge hanging/Lying routine injection(ledge0x2060, lying0x2070)[Bero]
+	CE AI Input Fix [ds22]
+Source/LegacyTE/ASLHelper.asm
+	[Legacy TE] ASL Helper for Solo Modes, SFX/GFX, and Replays V1.21 [DukeItOut, Kapedani]
+Source/LegacyTE/UnboundedTeamEngine.asm
+	[Legacy TE] Unbounded Team Color Engine EX Variant [DukeItOut, DesiacX]
+Source/Project+/Articles.asm
+	Unstoppable articles Redone [Eon, catscatscats99]
+	Save Angle of Collided Platform of Aura Sphere (LA-Float[25]) [Eon]
+	Save Angle of Collided Wall of Aura Sphere [Eon] 
+	Fireballs' Normal stored in LA-Float 25 upon bounce [MarioDox]
+Source/Project+/CompressPAC.asm
+	Costume PAC files can be compressed V3 [DukeItOut]
+	Character Costumes are decompressed in the Network Heap [Kapedani, DukeItOut]
+	Bowser and Giga Bowser Can Be Compressed [DukeItOut]
+	Only New Characters Need a Spy Costume Added [DukeItOut]
+Source/Project+/FilePatchCode.asm
+	File Patch Code REDUX v0.95 [Sammi Husky]
+	Source/P+Ex/ReplacementSoundbankEngine.asm
+		[Project+] RSBE v1.40 (/Project+/pf/sfx, can load soundbank clones for stages and items) (requires CSSLE) [InternetExplorer, DukeItOut, QuickLava, Kapedani]
+	SDHC Extension 1.1[Bero]
+Source/P+Ex/WaveIDIntercept.asm
+	Override RWSD WAVE ID via Info Index v1.8.0 [QuickLava]
+Source/Project+/IndependentSub.asm
+	[Project+] Independent Subroutines [Mawootad]
+Source/Project+/TrainingMode.asm
+	[Project+] Training Mode Combo Meter Allows for techchasing and grabs [Eon]
+	[Project+] Damage Stales in Training Mode, pause resets [Eon]
+	[Project+] Z + Finish in Training Room Resets Match with default settings [Eon]
+	[Project+] Custom Training Mode AI Options based on Stop + Random DI [Eon, PyotrLuzhin]
+	Random not at end of CSS doesnt crash Training Mode [Eon]
+Source/Project+/VictoryCamera.asm
+	Victory Camera Modifier Engine [DukeItOut]
+Custom Requirements v1.3 (ProjectM) [Magus, Sammi-Husky]
+Bit Variables Beyond 255 and Negative Offset Variables [Magus]
+Multiply Frame Speed Modifier Command [Magus]
+[Project+] Customizable Attacker Hitlag Modifier [DukeItOut]
+Defender Electric Hitlag disabled by 2.0x trip chance [Eon]
+Expand Classic mode horde battle costume array [Eon]
+Change Subaction Pass Frame also Passes FSM v 1.1 [Eon]
+changeMaterialTex returns if getResTex returned a null pointer [Eon]
+Tags in replays [Y.S]
+Lagless Character Selection [Magus]
+Reset Tag when Unplugged [standardtoaster]
+Japanese character support in name maker [Dantarion, standardtoaster]
+Allow disabled names [standardtoaster]
+Existing Tag Usage [standardtoaster]
+[Legacy TE] sc_selmap.pac can be 3 times larger because I said so V2 [DukeItOut]
+[Legacy TE] Hold L/R to inc/dec 1/4 of a character's costume count on the CSS [DukeItOut]
+Source/LegacyTE/Masquerade.asm
+	[Legacy TE] Masquerade Costume Flags V2 [ds22, DukeItOut]
+	Individual Costume Final Smash Works for All Costume IDs [Kapedani]
+	[Legacy TE] Set Masquerade Costume Count to Zero to have up to 50 costumes v1.1a [DukeItOut]
+	[Brawl-Themed P+] Stage Select Screen Supports 50CC [QuickLava]
+Team Colour Shade Check Fix (BrawlEx) [ds22, Sammi Husky]
+SFX Fade Fix PMEXv0.5 [ds22, PyotrLuzhin]
+Source/Project+/CSE.asm
+	[Project+] Custom Sound Engine v4.2b [Dantarion, PyotrLuzhin, DukeItOut]
+Source/Project+/ResultsMusic.asm
+	Classic and All-Star Results Music Table [DukeItOut]
+Source/Project+/SFXExpand.asm
+	SFX and Music Setting Customizer [DukeItOut]
+	[Project+] SoundBank Expansion System (RSBE.Ver) v2.2 [codes, DukeItOut, JOJI]
+	Hitbox Sound Effect Change System v2.1 [Eon]
+	[Project+] Sawnd Pop Fix V2 [DukeItOut]
+	[Project+] Expansion sawnd characters are mute while metal [DukeItOut]
+ZSS Jumbo Screen Name Fix [ds22]
+[Project+] Roy Counter Fix [ds22] 
+Snake's U-Smash can Have Horizontal Velocity [Magus]
+Source/Project+/EffectCommands.asm
+	PSA command 11210X00 sets next GFX anim index [Eon, DukeItOut]
+Source/Project+/Attributes.asm
+	On the Fly Attribute Modification (Item Crash Fix) [codes, Mawootad, DukeItOut]
+BOOST.txt
+	[Legacy TE] Extra null pointer catch [Fracture]
+	Source/Project+/StageFiles.asm
+		Stage File System Neo [DukeItOut]
+		Stage Roster Expansion System v3.2 [Phantom Wings, DukeItOut]
+		[Legacy TE] Stage Modules Are Portable Without Modification V2 [DukeItOut]
+		Custom Stage SD File Loader [DukeItOut, Replay Fix by Kapedani]
+		If No Song Titles Are Found, Obtain Them From The TLST File [DukeItOut]
+		source/Project+/MyMusic.asm
+			CMMCustom My Music V2 	 [JOJI, DukeItOut]
+			Enable Hanenbow in My Music [Desi]
+			[Legacy TE] My Music track frequency button shortcuts V2.1 (TLST file support) [Fracture, DukeItOut, Eon]
+			Force My Music's Menu slot to load its tracklist [DukeItOut]
+			Mushroomy Kingdom's slot only loads one tracklist [DukeItOut]
+			Salty Runback Expansion Stage Music Fix [DukeItOut]
+			Hanenbow can display song titles, but stage builder stages can't [JOJI, DukeItOut]
+			Miscellaneous Music Customizer [DukeItOut]
+			CMM OptionSpecial Stages [JOJI]
+			CMM SD File Saver (Uses SD Root Code’s Directory) [Desi, Fracture, DukeItOut]
+			MyMusic loads from 8053F200 instead of 81521F18 V1.1 [Desi, DukeItOut]
+		source/Project+/Random.asm
+			New SSS Random Code [DukeItOut]
+		[Legacy TE] Hold Y on Smashville to Guarantee a Concert V2 (requires ASL Helper and SFSN) [DukeItOut]
+		KK Concert Music Only Triggers Via TLST File [DukeItOut]
+		Metal Cavern and Online Training Room Can Use Custom Tracklists [DukeItOut]
+		SSSRESStage Selection Screen Roster Expansion System (RSBE.Ver) v1.2 [JOJI, DukeItOut]
+		Expansion Stages in All-Star Fix [DukeItOut]
+		Crush anywhere anytime [Eon] 
+		Crush effect in ef_StgBattleField outside of SSE [DukeItOut]
+		Stage Builder Can Not Save to Wii NAND [DukeItOut]
+		Universal Stage Camera Speed 2.0 [DukeItOut]
+		Custom Stage Select Screen V2 [Spunit, Phantom Wings, SOJ, Yohan1044, DukeItOut, JOJI]
+		Source/Project+/StageTable.asm
+			Stage Select Screen Table Data
+	Source/Project+/CustomRequirements.asm
+		Temporary Requirement ID Storage System [DukeItOut]
+		Extra Requirement Checks (Requires TRISS) [DukeItOut]
+	Source/Project+/Timeout.asm
+		[Project+] Tiebreaker v2.0 - Enforces Sudden Death Clause [Eon]
+		[Project+] RoA Overtime v2.1 - Timer resets to 10 seconds if there is more than 1 assigned winner [Eon]
+	Source/Project+/PSA.asm
+		PSA If Compare now accepts basics passed into them instead of requiring floats [Eon]
+	Source/Project+/AnimatedCSS.asm
+		Allow full CSS background animations [DukeItOut, mawwwk]
+	Source/Project+/Hurtbox.asm
+		Skip Attacker On-Hit Functions if it hits a Custom Hurtbox kind [MarioDox, DukeItOut]
+	Source/Project+/Items.asm
+		Max Items Spawnable 8 -> 12 [DukeItOut]
+		Additional Item Switch Frequency Settings 'VERY HIGH', 'INTENSE', and 'BOMB RAIN' [DukeItOut]
+	Source/Project+/Pause.asm
+		B while holding A + paused will re-roll stage music (P+ version) [Eon]
+		Song Title Displays On Pause Screen [Eon]
+	Source/Project+/Collision.asm
+		Raycast ignores Nonetype collision [Eon]
+	Source/P+Ex/AllStar.asm
+		All-Star Rest Area Stock Display Cap[Desi]
+	Source/P+Ex/Angle.asm
+		Special Angles [Eon, Kapedani, DukeItOut]
+	Source/P+Ex/CustomEnding.asm
+		CheckModFileSD function [DukeItOut]
+		Custom Ending Videos in Classic/All-Star [DukeItOut]
+		Independent Pokemon Custom Video/Ending Fix [DukeItOut]
+		BrawlEx Classic/All-Star Configurable Ending Skip [Desi, DukeItOut]
+	Source/P+Ex/IC-Basics.asm
+		Custom IC-Basics 1.0 [DukeItOut, Eon]
+		Custom IC-Variable Engine [Eon]
+		Timestamp at IC-Basic[30000] [Eon]
+		Item Custom IC-Basic[21021] = EmitterTask, IC-Basic[21022] = TeamOwnerTask [MarioDox, Kapedani]
+		Character Team via IC-Basic (Eon IC-Variable Engine) v1.0.0 [QuickLava]
+	Source/P+Ex/ItemEx.asm
+		ItemEx Clone Engine v2.1 [Sammi Husky, Kapedani]
+		Team Healer Always Heals Teammates [Kapedani]
+		Every Item Can Have Collision v2 [Kapedani]
+		Item Mayhem Mode (Item Switch Edition) + Butterfingers [MarioDox, DukeItOut, Kapedani]
+		Passive Aggressive Mode [Kapedani]
+		All Assists are Unlocked [Kapedani]
+		ItemEx Mayhem and Passive Aggression Modes default to Off on Boot [Kapedani]
+		utArchivereqLoad 4th Parameter as 2 forces read instead of clone [DukeItOut, Kapedani]
+	Source/P+Ex/Maths.asm
+		New Work Module Command Table [Eon]
+		Sin, Cos, aSin, aCos and aTan2 on Work Module 50, 51, 52, 53 and 54 [Eon]
+	Source/P+Ex/Misc.asm
+		Grabboxes work out of any action [Eon]
+		Falco can use his own final smash files [DukeItOut]
+		Mario Fireballs are Costume Based [codes, ds22]
+		Main Send Param Values Above 127 Increase Sound Volume v1.1.0 [QuickLava]
+		WDSK FFFF = Weight Independant KB (MarioDox)
+		Holding start on game end screen clears everyone (after 0.5 seconds) [Eon]
+		Additional Item Search Target Modes [Kapedani]
+	Source/P+Ex/PassiveAnim.asm
+		Force "PassiveAnim" Texture Animations To Play Indefinitely [DukeItOut]
+	Source/P+Ex/PointerWizardry.asm
+		Pointer Wizardry v1.1 [Eon]
+	Source/P+Ex/PSA.asm
+		Clear Specific Transition Term Group PSA Command [Eon]
+		Null GroundModule makes rayCheckTarget return false [Eon]
+		Concurrent Infinite Loop accepts int types so you can point to arbitrary code [Eon]
+		PSA Command 1F080200 (spawn item variant) [Sammi Husky]
+		On hit Action change through Trip Rate [MarioDox, Eon (refactor)]
+		Char Specific Paralyze Effect [MarioDox]
+		Source/P+Ex/CreateAndThrowItem.asm
+			Custom GenerateAndThrowItem PSA command [Sammi Husky]
+			CreateThrowItem -1 For Direction Just Creates and Doesn't Throw [Kapedani]
+		Store hit Task in LA/RA-Basic 6 [MarioDox]
+	Source/P+Ex/SlotEx.asm
+		[P+Ex] SlotsEX Rewrite v1.0.2 [MarioDox, GerraRReal, QuickLava]
+		Zelda/Sheik Icon Replacement [DesiacX, GeraRReal, QuickLava]
+	Source/P+Ex/SoundbankFix.asm
+		Manual Clone Soundbank Unload Fix + Macro [codes, ds22, Desi]
+	Source/P+Ex/Subspace.asm
+		BrawlEx Clone Engine v2.0.0.0 Subspace Fix (RSBE.Ver) [JOJI]
+		SSEEx Levels [Kapedani]
+		Default Subspace Sound Group is 0x0F2 [Kapedani]
+	Source/P+Ex/VariableParameter.asm
+		Move Hitbox And Hitbox Decleration allow Size and position to be specified with a variable [Eon]
+		Graphic effects accept variable arguments for rotation and rand elements [Eon]
+	Source/Extras/Console.asm
+		480p Pixel Fix Patch [leseratte, Eon]
+	Source/Extras/More.asm

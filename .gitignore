@@ -1,0 +1,5 @@
+# Ignore BrawlInstaller generated files as these are individually set
+SDCardRoot/private/wii/app/rsbe/BrawlInstaller
+
+# Ignore executable files. I don't host them.
+*.exe
