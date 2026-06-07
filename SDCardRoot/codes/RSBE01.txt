@@ -16,6 +16,7 @@
 ############################################################################
 
 .include Source/P+Ex/Hooktype.asm
+.include Source/Berlin/GlobalBrawlNetcodeCodes.txt
 
 ######################################################
 BA and BLA are usable instructions v1.3 [Eon, taukhan]
@@ -36,7 +37,7 @@ PULSE #80568100
   li r3, 0x1FF
   #physical address space = 0x00000000
   word 0x7C7283A6   #mtibatu 1, r3  #sets instruction bat upper half
-  isync 
+  isync
   blr
 }
 * E2000001 80008000
@@ -156,7 +157,7 @@ HOOK @ $8010F984
   	cmplwi r3, 0x39
   	blt- singleplayer
 multiplayer:
-  	li r29, 0x0	//only forces reset of stages for stable endless friendlies 
+  	li r29, 0x0	//only forces reset of stages for stable endless friendlies
 	stw r29, 0(r4)	//if actually a multiplayer-stage by design
 singleplayer:
   	cmpwi r6, 0x0
@@ -182,7 +183,7 @@ HOOK @ $801D84C8
   lis r12, 0x803F
   ori r12, r12, 0x89FC
   mtctr r12
-  bctrl 
+  bctrl
   add r29, r29, r3
   lwz r25, 4(r30)
   li r26, 0x0
@@ -199,7 +200,7 @@ loc_0x3C:
   lis r12, 0x803F
   ori r12, r12, 0x89FC
   mtctr r12
-  bctrl 
+  bctrl
   add r29, r29, r3
   lwz r25, 0(r25)
 
@@ -235,14 +236,14 @@ printInstructionCrash:
   lis r12, 0x803F
   ori r12, r12, 0x89FC
   mtctr r12
-  bctrl 
+  bctrl
   subi r3, r13, 0x592C
   subi r4, r13, 0x5924
   addi r5, r1, 0x8
   lis r12, 0x801D
   ori r12, r12, 0xB7E8
   mtctr r12
-  bctrl 
+  bctrl
 }
 op li r7, 0 @ $801dbf60
 op li r8, 0 @ $801dbf68
@@ -308,7 +309,7 @@ dontBury:
 	li r24, 0
 	li r25, 0
 	lis r12, 0x8076
-	ori r12, r12, 0xd0b0 
+	ori r12, r12, 0xd0b0
 	mtctr r12
 	bctr
 buryNormal:
@@ -502,7 +503,7 @@ HOOK @ $8083FFBC
 	lwz r3, 0x60(r3)		# Original operation
 	lwz r6, 0x70(r3)		# \
 	lwz r6, 0x24(r6)		# | Access RA-Basics
-	lwz r6, 0xC(r6)			# / 
+	lwz r6, 0xC(r6)			# /
 	lwz r5, 40(r6)			# We want RA-Basic[10] 	(10*4 = 40)
 	lis r12, 0x4849			# \ "HIT!" (48495421)
 	ori r12, r12, 0x5421		# /
@@ -523,7 +524,7 @@ MultiplyHitlag:
 	lwz r5, 48(r6)			# \ Access RA-Basic[12] (12*4 = 48)
 	mullw r4, r4, r5		# / and multiply the current hitlag by it
 	li r5, 0			# \
-	ori r5, r5, 60000		# | Scalars are really just ints * 60000			
+	ori r5, r5, 60000		# | Scalars are really just ints * 60000
 	divw r4, r4, r5			# / Convert back into an int!
 ModifiedHitlag:
 	cmpw r4, 0			# \
@@ -574,13 +575,13 @@ HOOK @ $80724224
     mr r3, r24
     lwz r12, 0x20(r12)
     mtctr r12
-    bctrl 
+    bctrl
     fsubs f0, f1, f1
     fcmpo cr0, f1, f0
     ble %end% #if new speed <= 0, don't pass it
-    #set as passed frame speed 
+    #set as passed frame speed
     fmr f30, f1
-} 
+}
 
 ####################################################################
 changeMaterialTex returns if getResTex returned a null pointer [Eon]
@@ -591,7 +592,7 @@ hook @ $800b72a0
     bne end
     lis r12, 0x800b
     ori r12, r12, 0x73f4
-    mtctr r12 
+    mtctr r12
     bctr
 end:
    stw r3, 0x44(r1)
@@ -612,7 +613,7 @@ Reset Tag when Unplugged [standardtoaster]
 ###########################################
 HOOK @ $80695264
 {
-	stw r0, 0x1C8(r28) 
+	stw r0, 0x1C8(r28)
 	lwz r3, 0x1E4(r28)
 }
 
@@ -689,7 +690,7 @@ HOOK @ $8069A37C
   	subic. r26, r26, 0x1
   	b %END%
 hastyScroll:
-  	li r6, 0x4	
+  	li r6, 0x4
  	divw r6, r3, r6		// jump rate = 1/r6 * total
   	subc. r26, r26, r6
 }
@@ -703,7 +704,7 @@ HOOK @ $8069A268
   	addi r26, r26, 0x1
   	b %END%
 hastyScroll:
-  	li r6, 0x4	
+  	li r6, 0x4
   	divw r6, r3, r6		// jump rate = 1/r6 * total
   	add r26, r26, r6
 }
@@ -741,10 +742,10 @@ SFX Fade Fix PMEXv0.5 [ds22, PyotrLuzhin]
 ZSS Jumbo Screen Name Fix [ds22]
 ################################
 op li r23, 0x17 @ $80985F44 //0x17 is ZSS ID, instead of the normal 0x3 for Samus
-op li r30, 0x17 @ $8098652C 
+op li r30, 0x17 @ $8098652C
 
 #################################
-[Project+] Roy Counter Fix [ds22] 
+[Project+] Roy Counter Fix [ds22]
 #################################
 HOOK @ $808A1058
 {
