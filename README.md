@@ -11,3 +11,6 @@ as you should also only download executables from direct trusted sources.
 You can download GCTRealMate [here](https://github.com/Project-Plus-Development-Team/GCTRealMate).
 
 I recommend you to put it within the `SDCardRoot/codes/` folder where it also originaly was within KJP's BrawlEX build.
+
+## Known issues
+- Link's name in Versus is "Donkey Kong"
