@@ -1,0 +1,6 @@
+@echo off
+echo Updating Modpack...
+git pull origin main
+
+echo Press any key to exit this window...
+pause > NUL
