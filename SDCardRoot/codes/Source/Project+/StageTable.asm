@@ -16,7 +16,7 @@ Stage Select Screen Table Data
 
 TABLE_1:
 	byte[31] |
-0x00,  | # SwampBattlefield
+0x00,  | # Battlefield
 0x01,  | # Final_Destination
 0x02,  | # Delfino_Plaza
 0x03,  | # Luigis_Mansion
@@ -36,7 +36,7 @@ TABLE_1:
 0x14,  | # Castle_Siege
 0x15,  | # WarioWare_Inc
 0x16,  | # Distant_Planet
-0x1A,  | # Xenoville
+0x1A,  | # Smashville
 0x19,  | # New_Pork_City
 0x12,  | # Summit
 0x17,  | # Skyworld
@@ -67,13 +67,13 @@ TABLE_5:
 
 TABLE_STAGES:
 	half[41] |
-0x0101, 0x0202, 0x0303, 0x0404,  | # SwampBattlefield, Final_Destination, Delfino_Plaza, Luigis_Mansion
+0x0101, 0x0202, 0x0303, 0x0404,  | # Battlefield, Final_Destination, Delfino_Plaza, Luigis_Mansion
 0x0505, 0x0606, 0x0707, 0x0808,  | # Mushroomy_Kingdom_00, Mario_Circuit, 75m, Rumble_Falls
 0x0909, 0x330A, 0x0B0B, 0x0C0C,  | # Pirate_Ship, Bridge_of_Eldin, Norfair, Frigate_Orpheon
 0x0D0D, 0x0E0E, 0x130F, 0x1410,  | # Yoshis_Island_Brawl, Halberd, Lylat_Cruise, Pokemon_Stadium_2
 0x1511, 0x1612, 0x1713, 0x1814,  | # Spear_Pillar, Port_Town_Aero_Dive, Summit, Flat_Zone_2
 0x1915, 0x1C16, 0x1D17, 0x1E18,  | # Castle_Siege, WarioWare_Inc, Distant_Planet, Skyworld
-0x1F19, 0x201A, 0x211B, 0x221C,  | # Mario_Bros, New_Pork_City, Xenoville, Shadow_Moses_Island
+0x1F19, 0x201A, 0x211B, 0x221C,  | # Mario_Bros, New_Pork_City, Smashville, Shadow_Moses_Island
 0x231D, 0x241E, 0x251F, 0x2932,  | # Green_Hill_Zone, Pictochat, Hanenbow, Temple
 0x2A33, 0x2B34, 0x2C35, 0x2D36,  | # Yoshis_Island_Melee, Jungle_Japes, Onett, Green_Greens
 0x2F37, 0x3038, 0x3139, 0x323A,  | # Rainbow_Cruise, Corneria, Big_Blue, Brinstar
